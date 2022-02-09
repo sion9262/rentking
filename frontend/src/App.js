@@ -1,8 +1,13 @@
 import React from "react";
+import SignUpForm from "./SignUpForm";
+import NavBar from "./NavBar";
 
 function App() {
   return (
-    <p>hi</p>
+    <div>
+      <SignUpForm/>
+      <NavBar/>
+    </div>
   );
 }
 
