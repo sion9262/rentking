@@ -1,31 +1,23 @@
-// import React from "react";
-// import SignUpForm from "./SignUpForm";
-// import NavBar from "./NavBar";
-
-// function App() {
-//   return (
-//     <div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React from "react";
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
+import LoginForm from "./LoginForm";
+import SignUpForm from "./SignUpForm";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <BrowserRouter>
-    <div>
-      <Routes>
-      </Routes>  
-    </div>
-  </BrowserRouter>  
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<SignUpForm />} />
+          <Route path="/login" element={<LoginForm />} />
+        </Routes>  
+        <Footer />
+      </div>
+    </BrowserRouter>  
+
   );
 }
 

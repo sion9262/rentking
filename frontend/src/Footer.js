@@ -2,7 +2,6 @@ import React from "react";
 import "./Footer.css"
 function Footer() {
   return (
-    
 <div class="footer_box02">
 		<div class="inner">
 			<div class="foot_list">

@@ -1,5 +1,7 @@
-//import { Axios } from 'axios';
+import { Axios } from 'axios';
 import React, { useState } from 'react';
+Axios.defaults.withCredentials = true;
+const headers = { withCredentials: true };
 
 function LoginForm() {
 
@@ -17,7 +19,27 @@ function LoginForm() {
 
         console.log(Email)
         console.log(Password)
-    }  
+    }
+
+    const login = () => {    
+        if (Email === "" || Email === undefined) {
+          alert("이메일 주소를 입력해주세요.");
+          this.loginEmail.focus();
+          return;
+        } else if (Password === "" || Password === undefined) {
+          alert("비밀번호를 입력해주세요.");
+          this.loginPw.focus();
+          return;
+        }
+
+        const send_param = {
+            headers,
+            email: Email, //키값 : 벨류값
+            password: Password
+          };
+
+    }
+
     return (
         <div style={{
             display:"flex", justifyContent  : "center", alignItems: "center"
@@ -31,7 +53,7 @@ function LoginForm() {
                 <label>Password</label>
                 <input type="password" value={Password} onChange={onPasswordHandler} />
                 <br />
-                <button>로그인</button>
+                <button onClick={login}>로그인</button>
             </form>
         </div>
     )

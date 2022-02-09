@@ -5,7 +5,10 @@ class SignUpForm extends Component{
 
     render() {
         return (
-            <div>
+            <div style={{
+                justifyContent  : "center", alignItems: "center", padding:40
+                , width: "100%", height: "100vh"
+            }}>
                 <div class="title">
                 <h1>회원가입</h1>
                 </div>
