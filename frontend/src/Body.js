@@ -3,7 +3,6 @@ import {
     BrowserRouter,
     Routes,
     Route,
-    Link
   } from "react-router-dom";
   
 
@@ -15,7 +14,7 @@ function Body() {
     <div>
       <Routes>
         <Route path="/login" element={<LoginForm />} />
-        <Route path="/" element={<LoginForm />} />
+        <Route path="/" element={<SignUpForm />} />
       </Routes>  
     </div>
   </BrowserRouter>  

@@ -16,17 +16,17 @@ class SignUpForm extends Component{
                     <div>
                         <label for="account">아이디</label>
                         <input type="text" name="id" id="account" required="required"/>
-                        <span class="alert-message" id="account-alert" style="display: none;">Test</span>
+                        <span class="alert-message" id="account-alert">Test</span>
                     </div>
                     <div>
                         <label for="password">비밀번호</label>
                         <input type="password" name="password" id="password" required="required"/>
-                        <span class="alert-message" id="account-alert" style="display: none;">Test</span>
+                        <span class="alert-message" id="account-alert">Test</span>
                     </div>
                     <div>
                         <label for="password2">비밀번호 확인</label>
                         <input type="password2" name="password2" id="password2" required="required"/>
-                        <span class="alert-message" id="account-alert" style="display: none;">Test</span>
+                        <span class="alert-message" id="account-alert">Test</span>
                     </div>
                 </fieldset>
             
@@ -55,7 +55,7 @@ class SignUpForm extends Component{
                         <option value="12">12월</option>
                     </select>
                     <input type="number" name="birth_day" min="1" max="31" required="required"/>
-                    <span class="alert-message" id="account-alert" style="display: none;">Test</span>
+                    <span class="alert-message" id="account-alert">Test</span>
                     </div>
             
                     <div>
@@ -69,7 +69,7 @@ class SignUpForm extends Component{
             
                     <input type="radio" name="gender" id="gender_unknown" required="required"/>
                     <label for="gender_unknown" value="unknown">기타</label>
-                    <span class="alert-message" id="account-alert" style="display: none;">Test</span>
+                    <span class="alert-message" id="account-alert">Test</span>
                     </div>
             
                 </fieldset>

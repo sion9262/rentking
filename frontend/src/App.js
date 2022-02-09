@@ -18,21 +18,14 @@ import {
     Route,
     Link
   } from "react-router-dom";
-  
-
-import LoginForm from "./LoginForm";
-import SignUpForm from "./SignUpForm";
 function App() {
   return (
     <BrowserRouter>
     <div>
       <Routes>
-        <Route path="/sign" element={<SignUpForm />} />
-        <Route path="/login" element={<LoginForm />} />
       </Routes>  
     </div>
   </BrowserRouter>  
-
   );
 }
 
