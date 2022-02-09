@@ -1,13 +1,13 @@
-import { Axios } from 'axios';
+//import { Axios } from 'axios';
 import React, { useState } from 'react';
 
-function LoginPage() {
+function LoginForm() {
 
-    const [Email, set1] = useState("")
+    const [Email, setEmail] = useState("")
     const [Password, setPassword] = useState("")
 
     const onEmailHandler = (event) => {
-        set1(event.currentTarget.value)
+        setEmail(event.currentTarget.value)
     }
     const onPasswordHandler = (event) => {
         setPassword(event.currentTarget.value)
@@ -37,4 +37,4 @@ function LoginPage() {
     )
 }
 
-export default LoginPage;
+export default LoginForm;
