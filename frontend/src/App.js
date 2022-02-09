@@ -1,8 +1,9 @@
 import React from "react";
 
+
 function App() {
   return (
-    <p>hi</p>
+    <div style={{backgroundColor:"red",display:"block"}}>test</div>
   );
 }
 
