@@ -1,5 +1,6 @@
-import { render } from "@testing-library/react";
-import React from "react";
+
+
+/* import React from "react";
 import {
   BrowserRouter,
   Routes,
@@ -20,10 +21,11 @@ function App() {
           <Route path="/navbar" element={<NavBar />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
-        </Routes>
+        </Routes>  
       </div>
-    </BrowserRouter>
+    </BrowserRouter>  
   );
 }
 
 export default App;
+*/
