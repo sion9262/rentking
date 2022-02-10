@@ -32,11 +32,11 @@ function LoginForm() {
           return;
         }
 
-        const send_param = {
-            headers,
-            email: Email, //키값 : 벨류값
-            password: Password
-          };
+        // const send_param = {
+        //     headers,
+        //     email: Email, //키값 : 벨류값
+        //     password: Password
+        //   };
 
     }
 
