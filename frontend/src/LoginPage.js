@@ -1,13 +1,14 @@
-import { Axios } from 'axios';
+import { axios } from 'axios';
 import React, { useState } from 'react';
+const headers = { withCredentials: true };
 
-function LoginPage() {
+function LoginForm() {
 
-    const [Email, set1] = useState("")
+    const [Email, setEmail] = useState("")
     const [Password, setPassword] = useState("")
 
     const onEmailHandler = (event) => {
-        set1(event.currentTarget.value)
+        setEmail(event.currentTarget.value)
     }
     const onPasswordHandler = (event) => {
         setPassword(event.currentTarget.value)
@@ -17,7 +18,27 @@ function LoginPage() {
 
         console.log(Email)
         console.log(Password)
-    }  
+    }
+
+    const login = () => {    
+        if (Email === "" || Email === undefined) {
+          alert("이메일 주소를 입력해주세요.");
+          this.loginEmail.focus();
+          return;
+        } else if (Password === "" || Password === undefined) {
+          alert("비밀번호를 입력해주세요.");
+          this.loginPw.focus();
+          return;
+        }
+
+        const send_param = {
+            headers,
+            email: Email, //키값 : 벨류값
+            password: Password
+          };
+
+    }
+
     return (
         <div style={{
             display:"flex", justifyContent  : "center", alignItems: "center"
@@ -31,10 +52,10 @@ function LoginPage() {
                 <label>Password</label>
                 <input type="password" value={Password} onChange={onPasswordHandler} />
                 <br />
-                <button>로그인</button>
+                <button onClick={login}>로그인</button>
             </form>
         </div>
     )
 }
 
-export default LoginPage;
+export default LoginForm;
