@@ -1,6 +1,5 @@
-import { Axios } from 'axios';
+import { axios } from 'axios';
 import React, { useState } from 'react';
-Axios.defaults.withCredentials = true;
 const headers = { withCredentials: true };
 
 function LoginForm() {
@@ -32,11 +31,11 @@ function LoginForm() {
           return;
         }
 
-        // const send_param = {
-        //     headers,
-        //     email: Email, //키값 : 벨류값
-        //     password: Password
-        //   };
+        const send_param = {
+            headers,
+            email: Email, //키값 : 벨류값
+            password: Password
+          };
 
     }
 
