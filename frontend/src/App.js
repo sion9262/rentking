@@ -1,18 +1,15 @@
 import React from "react";
 import {
-  BrowserRouter,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import LandingPage from "./LandingPage";
 import LoginPage from "./LoginPage";
 import RegisterPage from "./RegisterPage";
-import NavBar from "./NavBar";
+import NavBar from "./NavBar/NavBar";
 function App() {
   return (
-    <BrowserRouter>
       <div>
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -21,7 +18,6 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
         </Routes>  
       </div>
-    </BrowserRouter>  
   );
 }
 
