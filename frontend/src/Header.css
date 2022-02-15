@@ -20,8 +20,8 @@
  }
  
  .container {
-     background-color: #f0f0f0;
-    margin-left: auto;
+     background-color: #f0f0f0; /* #f0f0f0 */
+     margin-left: auto;
      margin-right: auto;
      padding: 9 0 10;
      

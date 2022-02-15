@@ -1,0 +1,23 @@
+.top-bar-table {
+    display: table;
+    width: 1000px;
+    margin: auto;
+}
+.t-body {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.top-bar {
+    background-color: #f0f3f7;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.td-left > span {
+   padding-right: 40px;
+}
+.td-right > span {
+}

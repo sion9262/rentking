@@ -15,9 +15,6 @@ function LoginForm() {
     }
     const onSubmitHandler = (event) => {
         event.preventDefault();
-
-        console.log(Email)
-        console.log(Password)
     }
 
     const login = () => {    
