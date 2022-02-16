@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
 import Body from "./Body";
+import Check from "./check";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,11 +12,7 @@ function App() {
     <BrowserRouter>
       <div>
         <Header />
-        <Body />
-        <Routes>
-          <Route path="/" element={<SignUpForm />} />
-          <Route path="/login" element={<LoginForm />} />
-        </Routes>  
+        <Check /> 
         <Footer />
       </div>
     </BrowserRouter>  
