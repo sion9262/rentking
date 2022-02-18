@@ -1,8 +1,131 @@
-.infor-name {
+.Agent-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.infor-table-css{ 
+    width: 1000px;
+    border: 0;
+    border-top: 1px solid #dae1e7;
+}
+
+
+.infor-table-css{
+    border-collapse: collapse;
+}
+
+
+.infor-text > p > span {
+    color: blue;
+}
+
+
+.infor-name-main{
+    width: 1000px;
+    margin: 35px 0 40px 0;
+}
+
+
+.infor-text{
+    width:1000px;
+    margin-bottom: 40px;
+}
+
+
+.infor-name2{
+    float: right;
+    background-color: #74b9ff;
+    width: 280px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+
+
+.infor-name2 > Link {
+    color: white;
+    text-decoration: none;
+}
+
+.infor-name{
     font-weight: 700;
-    font-size: 27px;
+    font-size: 23px;
+    float: left;
+}
+
+
+.infor-title{
+    font-weight: 700;
+    font-size: 19px;
+    width: 1000px;
     margin-bottom: 30px;
 }
-.infor > p > span {
-    color: blue;
+
+
+.infor {
+    margin-top: 100px;
+    width: 1000px;
+    margin-bottom: 50px;
+}
+
+
+.name-css1{
+    background-color: #f9fbfc;
+    border-bottom: 1px solid #dae1e7;
+    padding: 20px 0 20px 0;
+    width: 180px;
+}
+
+
+.name-css1-wrtie-star{
+    color: red;
+    font-style: bold;
+}
+
+
+.name-css2{
+    border-bottom: 1px solid #dae1e7;
+    padding-left: 15px;
+    width: 320px;
+}
+
+
+.name-css1-write{
+    padding-left: 15px;
+    text-align: left;
+    font-size: 13px;
+}
+.check-market{
+    width: 1000px;
+    margin: 40px 0 40px 0;
+}
+
+.check-market-text{
+    padding-left: 10px;
+}
+
+.name-css-input{
+    border: 1px solid #dae1e7;
+}
+.name-css-input-location{
+    text-indent: 10px;
+    margin: 10px 0 0 0;
+    border: 1px solid #dae1e7;
+}
+
+.likelo{
+    float: left;
+    margin-right: 10px;
+}
+
+.likelo-infor{
+    margin: 10px 0 10px 0;
+    color: #74b9ff;
 }
