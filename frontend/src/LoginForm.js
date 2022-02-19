@@ -1,60 +1,78 @@
-import axios from 'axios';
+import { axios } from 'axios';
 import React, { useState } from 'react';
+import "./login.css"
+//Axios.defaults.withCredentials = true;
 const headers = { withCredentials: true };
 
 function LoginForm() {
 
-    const [Email, setEmail] = useState("")
-    const [Password, setPassword] = useState("")
+    const [ID, setID] = useState("");
+    const [Password, setPassword] = useState("");
 
     const onEmailHandler = (event) => {
-        setEmail(event.currentTarget.value)
+        setID(event.currentTarget.value)
     }
     const onPasswordHandler = (event) => {
         setPassword(event.currentTarget.value)
     }
     const onSubmitHandler = (event) => {
         event.preventDefault();
-
-        console.log(Email)
-        console.log(Password)
     }
 
     const login = () => {    
-        if (Email === "" || Email === undefined) {
+        if (ID === "" || ID === undefined) {
           alert("이메일 주소를 입력해주세요.");
-          this.loginEmail.focus();
           return;
         } else if (Password === "" || Password === undefined) {
           alert("비밀번호를 입력해주세요.");
-          this.loginPw.focus();
           return;
         }
 
         const send_param = {
             headers,
-            email: Email, //키값 : 벨류값
+            id: ID, //키값 : 벨류값
             password: Password
           };
 
     }
 
     return (
-        <div style={{
-            display:"flex", justifyContent  : "center", alignItems: "center"
-            , width: "100%", height: "100vh"
-        }}>
-            <form style={{display: 'flex', flexDirection: 'column' }}
-                onSubmit={onSubmitHandler}
-            >  
-                <label>Email</label>
-                <input type="email" value={Email} onChange={onEmailHandler} />
-                <label>Password</label>
-                <input type="password" value={Password} onChange={onPasswordHandler} />
-                <br />
-                <button onClick={login}>로그인</button>
-            </form>
+        
+        <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>RentKing</h2>
+                    <p>회원가입하고 렌트킹의 <br/>다양한 서비스를 사용해보세요</p>
+                    <a href="" class="btn">회원가입</a>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>로그인</h2>
+                    <form action="">
+                        <p>
+                            <label>아이디<span>*</span></label>
+                            <input type="text" placeholder="아이디를 입력하세요" onChange={setID} required/>
+                        </p>
+                        <p>
+                            <label>비밀번호<span>*</span></label>
+                            <input type="password" placeholder="비밀번호를 입력하세요" onChange={setPassword} required/>
+                        </p>
+                        <p>
+                            <input type="submit" value="로그인"/>
+                        </p>
+                        <p>
+                            <a href="">비밀번호 찾기</a>
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+
         </div>
+    </div>
     )
 }
 
