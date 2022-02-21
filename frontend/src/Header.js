@@ -7,7 +7,7 @@ function Header(){
     <header>
         <div className="title-bar">
             <div className="title-name">
-                <a className="title-name-css" href="/">Rent King</a>
+                <a className="title-name-css" href="/">R</a>
             </div>
             <nav>
                 <ul className="ul-css">
