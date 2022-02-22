@@ -36,9 +36,6 @@ function AgentSignUpForm() {
     return (
         <div>
             <div className='Agent-container'>
-                <div style={{width:'1000px', position:'sticky', top:'100px',transition:'10s'}}>
-                    <div className='quickmenu'></div>
-                </div>
                 <div className='infor-name-main'>
                     <div className='infor-name'>부동산 회원가입</div>
                     <div className="infor-name2">

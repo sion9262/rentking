@@ -8,6 +8,7 @@
  .title-bar{
     width: 1000px;
     display: flex;
+    z-index: 2;
  }
  .title-name-css{
     text-decoration: none;
@@ -42,7 +43,8 @@
  }
  
  .container {
-     background-color: #f6f5ef;/* #f0f0f0 */
+    width: 100%;
+     background-color:#f6f5ef; /*#f0f0f0 */
      margin-left: auto;
      margin-right: auto;
      padding: 9 0 10;
@@ -76,7 +78,119 @@
     font-size:20px;
     height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     padding-right: 20px;
     font-weight: 700;
  }
+
+ .opqr{
+    content: "";
+    position: absolute;
+    width: 100%;
+    display: none;
+    bottom: 824px;
+    left: 0;
+    background-color: #2C2A29;
+    height: 50px;
+ }
+.opqr-inner{
+   width: 1100px;
+   margin: 0 auto;
+}
+.opqr-inner li{
+   display: inline-block;
+   height: 100%;
+   line-height: 50px;
+}
+ .opqr-inner > ul{
+    width: 1100px;
+    display: inline-block;
+ }
+ .li-css1:hover div{
+    display: block;
+ }
+ .li-css2:hover div{
+   display: block;
+}
+.li-css3:hover div{
+   display: block;
+}
+.li-css4:hover div{
+   display: block;
+}
+
+.li-css5:hover div{
+   display: block;
+}
+
+ .li-css1::after{
+   content: "";
+   bottom: 874px;
+   position: absolute;
+   width: 0;
+   height: 4px;
+   transition: all 0.5s;
+   background: green;
+ }
+
+ .li-css1:hover::after{
+    width: 75px;
+ }
+
+ .li-css2::after{
+   content: "";
+   bottom: 874px;
+   position: absolute;
+   width: 0;
+   transition: all 0.5s;
+   height: 4px;
+   background: green;
+ }
+
+ .li-css2:hover::after{
+    width: 55px;
+ }
+
+ .li-css3::after{
+   content: "";
+   bottom: 874px;
+   position: absolute;
+   width: 0;
+   height: 4px;
+   transition: all 0.5s;
+   background: green;
+ }
+
+ .li-css3:hover::after{
+    width: 75px;
+ }
+
+ .li-css4::after{
+   content: "";
+   bottom: 874px;
+   position: absolute;
+   width: 0;
+   height: 4px;
+   transition: all 0.5s;
+   background: green;
+ }
+
+ .li-css4:hover::after{
+    width: 145px;
+ }
+
+ .li-css5::after{
+   content: "";
+   bottom: 874px;
+   transition: all 0.5s;
+   position: absolute;
+   width: 0;
+   height: 4px;
+   background: green;
+ }
+
+ .li-css5:hover::after{
+    width: 25px;
+ }
+
