@@ -1,205 +1,190 @@
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans:400");
 @font-face {
-    font-family: 'KyoboHandwriting2020A';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "KyoboHandwriting2020A";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-*{
-    font-family: 'KyoboHandwriting2020A';
+* {
+  font-family: "KyoboHandwriting2020A";
 }
 
 .Agent-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-.infor-table-css{ 
-    width: 1000px;
-    border: 0;
-    border-top: 1px solid #dae1e7;
+.infor-table-css {
+  width: 1000px;
+  border: 0;
+  border-top: 1px solid #dae1e7;
 }
 
-
-.infor-table-css{
-    border-collapse: collapse;
+.infor-table-css {
+  border-collapse: collapse;
 }
-
 
 .infor-text > p > span {
-    color: blue;
+  color: blue;
 }
 
-
-.infor-name-main{
-    width: 1000px;
-    margin: 35px 0 40px 0;
+.infor-name-main {
+  width: 1000px;
+  margin: 35px 0 40px 0;
 }
 
-
-.infor-text{
-    width:1000px;
-    margin-bottom: 40px;
+.infor-text {
+  width: 1000px;
+  margin-bottom: 40px;
 }
 
-
-.infor-name2{
-    float: right;
-    background-color: #74b9ff;
-    width: 280px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 0px solid black;
-    border-radius: 10px;
+.infor-name2 {
+  float: right;
+  background-color: #74b9ff;
+  width: 280px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0px solid black;
+  border-radius: 10px;
 }
-
 
 .infor-name2 > Link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-.infor-name{
-    font-weight: 700;
-    font-size: 23px;
-    float: left;
+.infor-name {
+  font-weight: 700;
+  font-size: 23px;
+  float: left;
 }
 
-
-.infor-title{
-    font-weight: 700;
-    font-size: 19px;
-    width: 1000px;
-    margin-bottom: 30px;
+.infor-title {
+  font-weight: 700;
+  font-size: 19px;
+  width: 1000px;
+  margin-bottom: 30px;
 }
-
 
 .infor {
-    margin-top: 100px;
-    width: 1000px;
-    margin-bottom: 50px;
+  margin-top: 100px;
+  width: 1000px;
+  margin-bottom: 50px;
 }
 
-
-.name-css1{
-    background-color: #f9fbfc;
-    border-bottom: 1px solid #dae1e7;
-    padding: 20px 0 20px 0;
-    width: 180px;
+.name-css1 {
+  background-color: #f9fbfc;
+  border-bottom: 1px solid #dae1e7;
+  padding: 20px 0 20px 0;
+  width: 180px;
 }
 
-
-.name-css1-wrtie-star{
-    color: red;
-    font-style: bold;
+.name-css1-wrtie-star {
+  color: red;
+  font-style: bold;
 }
 
-
-.name-css2{
-    border-bottom: 1px solid #dae1e7;
-    padding-left: 15px;
-    width: 320px;
+.name-css2 {
+  border-bottom: 1px solid #dae1e7;
+  padding-left: 15px;
+  width: 320px;
 }
 
-
-.name-css1-write{
-    padding-left: 15px;
-    text-align: left;
-    font-size: 13px;
+.name-css1-write {
+  padding-left: 15px;
+  text-align: left;
+  font-size: 13px;
 }
-.check-market{
-    width: 1000px;
-    margin: 40px 0 40px 0;
-}
-
-.check-market-text{
-    padding-left: 10px;
+.check-market {
+  width: 1000px;
+  margin: 40px 0 40px 0;
 }
 
-.name-css-input{
-    border: 1px solid #dae1e7;
+.check-market-text {
+  padding-left: 10px;
 }
 
-
-.name-css-input:focus{
-    border: 2px solid blue;
+.name-css-input {
+  border: 1px solid #dae1e7;
 }
 
-
-.name-css-input-location{
-    text-indent: 10px;
-    margin: 10px 0 0 0;
-    border: 1px solid #dae1e7;
+.name-css-input:focus {
+  border: 2px solid blue;
 }
 
-.likelo{
-    float: left;
-    margin-right: 10px;
+.name-css-input-location {
+  text-indent: 10px;
+  margin: 10px 0 0 0;
+  border: 1px solid #dae1e7;
 }
 
-.forcelist-css{
-    float: left;
-    margin-right: 10px;
+.likelo {
+  float: left;
+  margin-right: 10px;
 }
 
-.forcelist-infor{
-    margin: 10px 0 10px 0;
-    color: #74b9ff;
+.forcelist-css {
+  float: left;
+  margin-right: 10px;
 }
 
-
-.likelo-infor{
-    margin: 10px 0 10px 0;
-    color: #74b9ff;
+.forcelist-infor {
+  margin: 10px 0 10px 0;
+  color: #74b9ff;
 }
 
-.SearchPost{
-    background-color: transparent;
-    border: 1px solid #888f91;
-    border-radius: 10px;
-    padding: 5px;
-    width: 100px;
-    margin-left: 10px;
-    cursor: pointer;
-    color: #888f91;
-}
-.condiword{
-    font-size: 13px;
-    font-weight: 300;
-    margin-top: 0;
-    padding: 0;
+.likelo-infor {
+  margin: 10px 0 10px 0;
+  color: #74b9ff;
 }
 
-.checkid{
-    background-color: transparent;
-    border: 1px solid #888f91;
-    border-radius: 10px;
-    padding: 5px;
-    width: 100px;
-    margin-left: 10px;
-    cursor: pointer;
-    margin-right: 10px;
-    color: #888f91;
+.SearchPost {
+  background-color: transparent;
+  border: 1px solid #888f91;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #888f91;
+}
+.condiword {
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 0;
+  padding: 0;
 }
 
-.nece{
-    margin-top: 10px;
-    font-size: 13px;
+.checkid {
+  background-color: transparent;
+  border: 1px solid #888f91;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100px;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #888f91;
 }
 
-.quickmenu{
-    width:200px;
-    height: 300px;;
-    background-color: green;
-    position: absolute;
-    top: 100px;
-    margin-left: 1050px;
-    transition-duration: 5s;
+.nece {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.quickmenu {
+  width: 200px;
+  height: 300px;
+  background-color: green;
+  position: absolute;
+  top: 100px;
+  margin-left: 1050px;
+  transition-duration: 5s;
 }

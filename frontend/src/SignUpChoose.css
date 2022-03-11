@@ -1,0 +1,146 @@
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 200px 0;
+}
+.textAll{
+    margin: 100px 0 60px 0;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.textAllcss1{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.textAllcss2, .textAllcss3{
+    font-size: 16px;
+    color: blue;
+}
+.textAllcss3{
+    margin-bottom: 20px;
+}
+.textAllcss4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.textAllcss5{
+    font-size: 17px;
+}
+.choseAgent{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+.Agentcss1{
+    position: absolute;
+    color: black;
+    padding: 20px;
+    top: 0;
+}
+.Agentcss2{
+    font-size: 20px;
+    color: blue;
+    border-bottom: 2px solid blue;
+    margin-bottom: 3px;
+}
+.Agentcss3{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 15px;
+}
+.Agentcss4{
+    color: blue;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.Agentcss5, .Agentcss6{
+    color: black;
+    font-size: 15px;
+}
+.Agentcss7-cover{
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: blue;
+}
+.chosenormal{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+.normalcss1{
+    position: absolute;
+    padding: 20px;
+    top: 0;
+}
+.normalcss2{
+    font-size: 20px;
+    color: blue;
+    border-bottom: 2px solid blue;
+    margin-bottom: 3px;
+}
+.normalcss3{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.normalcss4{
+    color: blue;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.normalcss5, .normalcss6{
+    font-size: 15px;
+}
+.normalcss7-cover{
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: blue;
+}
+.hoverEffect{
+    border: 1px solid black;
+    border-radius: 22px;
+}
+.hoverEffect:hover{
+    border-color: blue;
+}
+.hoverEffect:hover .normalcss7-cover{
+    background-color: blue;
+    color: white;
+}
+.hoverEffect:hover .Agentcss7-cover{
+    background-color: blue;
+    color: white;
+}
+Link{
+    text-decoration: none;
+}
